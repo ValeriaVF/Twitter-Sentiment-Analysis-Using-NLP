@@ -1,7 +1,7 @@
 # Sentiment Analysis of Tweets by Brand
 #### Authors: Eddie Prado, Sally Heinzel, Valeria Viscarra Fossati, and Weston Shuken
 
-![Header Image](sentiment_analysis_header.png)
+![Header Image](/images/sentiment_analysis_header.png)
 
 ######Image by SurveySensum
 
