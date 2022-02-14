@@ -33,7 +33,7 @@ We used a binary classifier to predict if a tweet would have a negative or not. 
 Please contact the contributors to this analysis: 
 [Eddie Prado]() |
 [Sally Heinzel]() |
-[Valeria Fossati]() |
+[Valeria Viscarra Fossati]() |
 [Weston Shuken](https://www.linkedin.com/in/westonshuken/)
 
 
