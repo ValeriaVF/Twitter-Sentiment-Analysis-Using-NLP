@@ -1,5 +1,5 @@
 # Sentiment Analysis of Google and Apple products
-#### Authors: Eddie Prado, Sally Heinzel, Valeria Fossati, and Weston Shuken
+#### Authors: Eddie Prado, Sally Heinzel, Valeria Viscarra Fossati, and Weston Shuken
 
 ![Header Image](sentiment_analysis_header.png)
 
