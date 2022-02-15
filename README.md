@@ -11,7 +11,10 @@ Understanding brand and product reputation is difficult when only provided custo
 We are VIAGogo that can provide you with our state-of-the-art machine learning model that can rate the sentiment of tweets based on users who tweet about your brand. We can provide you with a real-time graph showing the trends of user sentiment towards your brand and products.
 
 ## Business Issue
-Companies have little insight into their overall brand reputation on social media platforms. Our team of experts can prodivde real-time, accurate analysis of brand reputaiton based on the sentiment analysis of tweets on Twitter.
+
+Companies have little insight into their overall brand reputation on social media platforms. Twitter has the ability to prodivde real-time, accurate analysis of brand reputaiton based on the sentiment analysis of tweets on Twitter. Our team of experts has built a Machine Learning model that uses Natural Language Processing to distinguish between positive and negative sentiment in Tweets. Using Google and Apple mentions on Twitter, we were able to classify sentiment to an 89% accuracy. 
+
+This model will be used as an analytics tool for companies to access their products' popularity on Twitter without having to access Twitter API. 
 
 ## Data & Methods
 The dataset comes from Crowdflower via [data.world](https://data.world/crowdflower/brands-and-product-emotions) *Created: August 30, 2013 by Kent Cavender-Bares*. The data contains over 9,000 tweets from Twitter users on how they evaluated multiple brands and products. The crowd was asked if the tweet expressed positive, negative, or no emotion towards a brand and/or product. If some emotion was expressed they were also asked to say which brand or product was the target of that emotion. 
