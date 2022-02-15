@@ -3,12 +3,12 @@
 
 ![Header Image](/images/sentiment_analysis_header.png)
 
-######Image by SurveySensum
+###### Image by SurveySensum
 
 ## Overview
 Understanding brand and product reputation is difficult when only provided customer survey and review data. However, there is an abundance of social media responses to products and brands on various platforms. With these unoffical reviews and preferences towards products via tweets from Twitter, we can derive an overall sentiment towards your brand and products.
 
-We are CONSULTING TEAM NAME that can provide you with our state-of-the-art machine learning model that can rate the sentiment of tweets based on users who tweet about your brand. We can provide you with a real-time graph showing the trends of user sentiment towards your brand and products.
+We are VIAGogo that can provide you with our state-of-the-art machine learning model that can rate the sentiment of tweets based on users who tweet about your brand. We can provide you with a real-time graph showing the trends of user sentiment towards your brand and products.
 
 ## Business Issue
 Companies have little insight into their overall brand reputation on social media platforms. Our team of experts can prodivde real-time, accurate analysis of brand reputaiton based on the sentiment analysis of tweets on Twitter.
@@ -33,7 +33,7 @@ We used a binary classifier to predict if a tweet would have a negative or not. 
 Please contact the contributors to this analysis: 
 [Eddie Prado]() |
 [Sally Heinzel]() |
-[Valeria Viscarra Fossati]() |
+[Valeria Viscarra Fossati](https://www.linkedin.com/in/valeria-vf/) |
 [Weston Shuken](https://www.linkedin.com/in/westonshuken/)
 
 
@@ -46,3 +46,4 @@ Please contact the contributors to this analysis:
 ├── README.md                              <- The top-level README for reviewers of this project
 ├── index.ipynb                            <- Narrative documentation of analysis and modeling
 └── presentation.pdf                       <- PDF version of project presentation
+```
