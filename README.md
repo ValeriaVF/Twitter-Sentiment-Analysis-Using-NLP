@@ -12,17 +12,34 @@ We are VIAGogo that can provide you with our state-of-the-art machine learning m
 
 ## Business Issue
 
-Companies have little insight into their overall brand reputation on social media platforms. Twitter has the ability to prodivde real-time, accurate analysis of brand reputaiton based on the sentiment analysis of tweets on Twitter. Our team of experts has built a Machine Learning model that uses Natural Language Processing to distinguish between positive and negative sentiment in Tweets. Using Google and Apple mentions on Twitter, we were able to classify sentiment to an 89% accuracy. 
+Companies have little insight into their overall brand reputation on social media platforms. Twitter has the ability to prodivde real-time, accurate analysis of brand reputaiton based on the sentiment analysis of tweets on Twitter. The word cloud below is an example of of how Twitter users are talking about Google and Apple:
+
+<img width="965" alt="Wordcloud" src="https://user-images.githubusercontent.com/79488205/154538264-a0b97af9-dbae-4081-a2e6-bac438df0994.png">
+
+Our team of experts has built a Machine Learning model that uses Natural Language Processing to distinguish between positive and negative sentiment in Tweets. Using Google and Apple mentions on Twitter, we were able to classify sentiment to an 89% accuracy. 
 
 This model will be used as an analytics tool for companies to access their products' popularity on Twitter without having to access Twitter API. 
 
 ## Data & Methods
-The dataset comes from Crowdflower via [data.world](https://data.world/crowdflower/brands-and-product-emotions) *Created: August 30, 2013 by Kent Cavender-Bares*. The data contains over 9,000 tweets from Twitter users on how they evaluated multiple brands and products. The crowd was asked if the tweet expressed positive, negative, or no emotion towards a brand and/or product. If some emotion was expressed they were also asked to say which brand or product was the target of that emotion. 
+The dataset comes from Crowdflower via [data.world](https://data.world/crowdflower/brands-and-product-emotions) *Created: August 30, 2013 by Kent Cavender-Bares*. The data contains over 9,000 tweets from Twitter users that evaluated multiple brands and products. The crowd was asked if the tweet expressed positive, negative, or no emotion towards a brand and/or product. If some emotion was expressed they were also asked to say which brand or product was the target of that emotion. 
 
-We used a binary classifier to predict if a tweet would have a negative or not. We chose to use this binary classification because negative sentiment is much more insightful to a brand versus neutral or positive sentiment. An example of usage could be to monitor if the negative sentiment increases on a particular day, then we can use inferential analysis to find specific tweets that were affecting the rating.
+During our exploratory data aalysis, we found that the data was not balanced, as shown by the graphs below: 
 
+![Sentiment Dashboard](https://user-images.githubusercontent.com/79488205/154533171-abf7f63c-6498-4082-9c98-16b1618f05e7.png)
+
+
+In order to adress this inbalnce, we first used a binary classifier to predict if a tweet would have a negative or not negative response. We chose to use this binary classification because negative sentiment is much more insightful to a brand versus neutral or positive sentiment. An example of usage could be to monitor if the negative sentiment increases on a particular day, then we can use inferential analysis to find specific tweets that were affecting the rating.
 
 ## Results & Evaluation
+
+Our baseline binary models classified tweets with an accuracy of 83 - 88%:
+
+<img width="515" alt="Baseline Binary Models" src="https://user-images.githubusercontent.com/79488205/154533341-9aa712da-ded6-4b76-b809-75abea25f450.png">
+
+Once we had this baseline, we continued to tune the models until we reached an accuracy score of 89% with our SGD Classifier model: 
+
+<img width="504" alt="Tuned Binary Models" src="https://user-images.githubusercontent.com/79488205/154537919-16955719-995f-44bd-be1e-7ac72e7c70af.png">
+
 
 ## Online Application
 
