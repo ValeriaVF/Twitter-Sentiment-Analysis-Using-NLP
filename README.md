@@ -6,13 +6,13 @@
 ###### Image by SurveySensum
 
 ## Overview
-Understanding brand and product reputation is difficult when only provided customer survey and review data. However, there is an abundance of social media responses to products and brands on various platforms. With these unoffical reviews and preferences towards products via tweets from Twitter, we can derive an overall sentiment towards your brand and products.
+Understanding brand and product reputation is difficult when only provided customer survey and review data. However, there is an abundance of social media responses to products and brands on various platforms. With these unofficial reviews and preferences towards products via tweets from Twitter, we can derive an overall sentiment towards your brand and products.
 
-We are VIAGogo that can provide you with our state-of-the-art machine learning model that can rate the sentiment of tweets based on users who tweet about your brand. We can provide you with a real-time graph showing the trends of user sentiment towards your brand and products.
+Our comany, ViaGoGo, can provide you with a state-of-the-art machine learning model that rates the product and brand sentiment based on users who tweet about your brand. We can provide you with real-time graphs showing the trends of user sentiment towards your brand and products.
 
 ## Business Issue
 
-Companies have little insight into their overall brand reputation on social media platforms. Twitter has the ability to prodivde real-time, accurate analysis of brand reputaiton based on the sentiment analysis of tweets on Twitter. The word cloud below is an example of of how Twitter users are talking about Google and Apple:
+Companies have little insight into their overall brand reputation on social media platforms. Twitter can provide real-time, accurate analysis of brand reputation based on the sentiment analysis of tweets on Twitter. The word cloud below is an example of how Twitter users are talking about Google and Apple:
 
 <img width="965" alt="Wordcloud" src="https://user-images.githubusercontent.com/79488205/154538264-a0b97af9-dbae-4081-a2e6-bac438df0994.png">
 
@@ -21,14 +21,14 @@ Our team of experts has built a Machine Learning model that uses Natural Languag
 This model will be used as an analytics tool for companies to access their products' popularity on Twitter without having to access Twitter API. 
 
 ## Data & Methods
-The dataset comes from Crowdflower via [data.world](https://data.world/crowdflower/brands-and-product-emotions) *Created: August 30, 2013 by Kent Cavender-Bares*. The data contains over 9,000 tweets from Twitter users that evaluated multiple brands and products. The crowd was asked if the tweet expressed positive, negative, or no emotion towards a brand and/or product. If some emotion was expressed they were also asked to say which brand or product was the target of that emotion. 
+The dataset comes from Crowdflower via [data.world](https://data.world/crowdflower/brands-and-product-emotions) *Created: August 30, 2013 by Kent Cavender-Bares*. The data contains over 9,000 tweets from Twitter users that evaluated multiple brands and products. The crowd was asked if the tweet expressed positive, negative, or no emotion towards a brand and/or product. If some emotion was expressed, they were also asked to say which brand or product was the target of that emotion. 
 
-During our exploratory data aalysis, we found that the data was not balanced, as shown by the graphs below: 
+During our exploratory data analysis, we found that the data was not balanced, as shown by the graphs below:
 
 ![Sentiment Dashboard](https://user-images.githubusercontent.com/79488205/154533171-abf7f63c-6498-4082-9c98-16b1618f05e7.png)
 
 
-In order to adress this inbalnce, we first used a binary classifier to predict if a tweet would have a negative or not negative response. We chose to use this binary classification because negative sentiment is much more insightful to a brand versus neutral or positive sentiment. An example of usage could be to monitor if the negative sentiment increases on a particular day, then we can use inferential analysis to find specific tweets that were affecting the rating.
+In order to address this imbalance, we first used a binary classifier to predict if a tweet would have a negative or not negative response. We chose to use this binary classification because negative sentiment is much more insightful to a brand versus neutral or positive sentiment. An example of usage could be to monitor if the negative sentiment increases on a particular day, then we can use inferential analysis to find specific tweets that were affecting the rating.
 
 ## Results & Evaluation
 
@@ -51,12 +51,12 @@ The Twitter Sentiment Analysis adds value to businesses in 3 main ways:
 -	Market Research – identify and explore the sentiments directed at one’s competitors in order to develop strategies based on their successes and struggles;
 -	Customer Service – pinpoint which brands, locations, or services are thriving in customer satisfaction and which ones need the most urgent attention.
 
-By adopting Via Gogo’s Twitter Sentiment Analysis and offering it as a service for corporate users, Twitter will increase its utility and make itself an indispensable part of the modern business landscape.
+By adopting ViaGogo’s Twitter Sentiment Analysis and offering it as a service for corporate users, Twitter will increase its utility and make itself an indispensable part of the modern business landscape.
 
 ## Next Steps
-Via Gogo in currently working on some new applications for its Twitter Sentiment Analysis. One product in development is the Positivity Rater. This tool gives users a positivity rating based on the analysis of the account’s past tweets. This can be useful to increase engagement among Twitters users. With so many people turned off by negative and harmful content, the Positivity Rater allows an individual to gauge how positive someone is when considering whether or not to follow them. We believe this will boost user activity and retain those who otherwise may stop using Twitter due to so much unwanted, pernicious content.
+ViaGogo in currently working on some new applications for its Twitter Sentiment Analysis. One product in development is the Positivity Rater. This tool gives users a positivity rating based on the analysis of the account’s past tweets. This can be useful to increase engagement among Twitters users. With so many people turned off by negative and harmful content, the Positivity Rater allows an individual to gauge how positive someone is when considering whether or not to follow them. We believe this will boost user activity and retain those who otherwise may stop using Twitter due to so much unwanted, pernicious content.
 
-Another area Via GoGo is actively working on is the creation of dashboards, which allow users to easily visualize sentiment analysis both in real-time and longitudinally. These dashboards will filter data on different dimensions, such as time frame, location, and product/service. It will also facilitate easy comparison of a given metric (for example, comparing the sentiments expressed towards 2 different branches or how sentiment about a product compares to this time last year).
+Another area ViaGoGo is actively working on is the creation of dashboards, which allow users to easily visualize sentiment analysis both in real-time and longitudinally. These dashboards will filter data on different dimensions, such as time frame, location, and product/service. It will also facilitate easy comparison of a given metric (for example, comparing the sentiments expressed towards 2 different branches or how sentiment about a product compares to this time last year).
 
 Finally, ViaGoGo is already in production of a web app that allows users to write a tweet and see its sentiment rating before publishing it. This will ensure that the author strikes the appropriate tone with their tweet and can prevent thoughtless or poorly constructed tweets from entering the public domain. This feature will be valued by social media managers sitewide.
 
