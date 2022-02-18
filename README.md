@@ -14,7 +14,7 @@ Our comany, ViaGoGo, can provide you with a state-of-the-art machine learning mo
 
 Companies have little insight into their overall brand reputation on social media platforms. Twitter can provide real-time, accurate analysis of brand reputation based on the sentiment analysis of tweets on Twitter. The word cloud below is an example of how Twitter users are talking about Google and Apple:
 
-<img width="965" alt="Wordcloud" src="https://user-images.githubusercontent.com/79488205/154538264-a0b97af9-dbae-4081-a2e6-bac438df0994.png">
+<img width="737" alt="word_cloud" src="https://user-images.githubusercontent.com/79488205/154748143-17743934-bc8a-40bc-8ec7-86d50fd60665.png">
 
 Our team of experts has built a Machine Learning model that uses Natural Language Processing to distinguish between positive and negative sentiment in Tweets. Using Google and Apple mentions on Twitter, we were able to classify sentiment to an 89% accuracy. 
 
@@ -25,29 +25,27 @@ The dataset comes from Crowdflower via [data.world](https://data.world/crowdflow
 
 During our exploratory data analysis, we found that the data was not balanced, as shown by the graphs below:
 
-![Sentiment Dashboard](https://user-images.githubusercontent.com/79488205/154533171-abf7f63c-6498-4082-9c98-16b1618f05e7.png)
+#### All data sentiment count:
+<img width="410" alt="all_data_sentiment" src="https://user-images.githubusercontent.com/79488205/154748205-07024099-81f4-4a89-a86f-d5b8271ba599.png">
 
+#### Google & Apple sentiment ratio:
+<img width="411" alt="google_apple_sentiment_ratio" src="https://user-images.githubusercontent.com/79488205/154748394-608d0f0a-7ee0-465c-ab95-cbb2dccea9e3.png">
 
 In order to address this imbalance, we first used a binary classifier to predict if a tweet would have a negative or not negative response. We chose to use this binary classification because negative sentiment is much more insightful to a brand versus neutral or positive sentiment. An example of usage could be to monitor if the negative sentiment increases on a particular day, then we can use inferential analysis to find specific tweets that were affecting the rating.
 
 ## Results & Evaluation
 
-Our baseline binary models classified tweets with an accuracy of 83 - 88%:
+We built multiclass models to predict whether tweets were positive, neutral and negative. Our baseline model has a 61%  accuracy which is derived by always predicting the neutral class (given its imbalance). We increased this score using machine learning models, specifically Naive Bayes, Random Forest, Neural Network, and SGD Classifier, finally arriving at our best model at ~72% accuracy.
 
-<img width="515" alt="Baseline Binary Models" src="https://user-images.githubusercontent.com/79488205/154533341-9aa712da-ded6-4b76-b809-75abea25f450.png">
-
-Once we had this baseline, we continued to tune the models until we reached an accuracy score of 89% with our SGD Classifier model: 
-
-<img width="504" alt="Tuned Binary Models" src="https://user-images.githubusercontent.com/79488205/154537919-16955719-995f-44bd-be1e-7ac72e7c70af.png">
-
+<img width="405" alt="multiclass_models" src="https://user-images.githubusercontent.com/79488205/154748935-457f5a4e-bf1e-4199-9a80-f0d99913e04d.png">
 
 ## Online Application
 
 We created an online application to demo the model's performance. The user can input a sample tweet and click the 'GoGo!' button, which will then return a sentiment score for the sample tweet of Positive, Negative, or Neutral.
 
-![Online_App](images/online_app.jpg)
+  [![name](https://github.com/ValeriaVF/Phase-4-Project/blob/main/images/cry_gogo.png)](https://www.canva.com/design/DAE4WW7ptzE/SWU2L4VoSazKOZod4JiJYA/edit)
 
-To demo the product, please visit this [link]().
+To demo the product, please click on our logo or visit this [link]().
 
 ## Business Proposal Summary
 Being competitive in the 21st century means utilizing 21st-century tools. ViaGogo’s Twitter Sentiment Analysis, built using natural language processing, offers Twitter an opportunity to give their brand users an advantage in the marketplace. This product enables businesses to capture public reactions about their company and products in a far more timely and authentic manner than focus groups or surveys. It collects and analyzes real-time reactions in order for businesses to make effective decisions.
