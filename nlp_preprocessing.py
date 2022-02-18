@@ -1,4 +1,13 @@
+from unicodedata import name
+from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.metrics import accuracy_score, plot_confusion_matrix
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+import re
+
 class VIA_GoGo:
+
     """
     A class to clean and tokenize our twitter data for nlp
     processing
@@ -189,3 +198,82 @@ class VIA_GoGo:
 
         # Returns a nlp pre-processed dataframe
         return df
+
+
+    def run_model(self, clf, table, X, y, type_='model', join_str=True, plot_models=False, pipeline=True):
+        """
+        Takes in a model, metric table, X, y, type of model and whether or not
+        the X vairble needs to be joined or not.
+
+        The function splits the X & y in to training and testing sets.
+        The model is fit to the trained X and does cross validation.
+        The model then predicts and provides accuracy score for the test X.
+
+        The funciton returns a metric table with Model, Mean CV, Accuracy, & Type.
+
+
+        Parameters
+        ----------
+            clf: Pipline with vecotirzer and estimator
+                pipline with vecotirzer and estimator
+            table: DataFrame
+                used for appending scores.
+            X: pandas.Series.series 
+                series of text features
+            y: pandas.Series.series
+                series of categorical predictors
+            type_: str; type of model. e.g. 'baseline'
+                appends to table
+            join_str: boolean
+                if X is tokenized, join_str=True will join the text for vectorization.
+                default='True'
+        
+        Returns
+        -------
+        Metric table with model scoring.
+        """
+
+        if join_str == True:
+            X = [' '.join(tweet) for tweet in X]
+        else:
+            X = X
+    
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size= 0.25, random_state= 5)
+        
+        clf.fit(X_train, y_train)
+        
+        cv_score = cross_val_score(clf, X_train, y_train, cv=5)
+        cv_score_mean = round(np.mean(cv_score), 4)
+    
+        y_pred = clf.predict(X_test)
+        acc_score = accuracy_score(y_pred, y_test)
+
+        
+        if pipeline == True:
+            model_name = str(clf[2])
+            model_name = re.sub("([\(\[]).*?([\)\]])", "\g<1>\g<2>", model_name)
+        elif pipeline != True:
+            model_name = str(clf)
+            model_name = re.sub("([\(\[]).*?([\)\]])", "\g<1>\g<2>", model_name)
+
+        
+        
+        table = table.append({'Model': model_name + type_, 'CV Score': cv_score_mean, 'Test Accuracy': round(acc_score, 4), 'Type': type_}, ignore_index=True)
+
+
+        return table
+
+    def plot_models(self, table):
+        sns.set_style('darkgrid')
+        sns.set_context('poster')
+        fig, ax = plt.subplots(figsize=(20, 10))
+        plt.bar(table.Model, table['Test Accuracy']*100, color='lightblue', label='Test Accuracy')
+        plt.plot(table.Model, table['CV Score']*100, color='blue', label='CV Score')
+        plt.ylim(50, 109)
+        plt.grid(False)
+        plt.xticks(rotation=40, ha='right') 
+        plt.ylabel('Scoring (%)')
+        plt.title('Model Improvements')
+        plt.legend(loc="upper left")   
+        plt.show() 
+        return 
