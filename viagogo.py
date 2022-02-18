@@ -238,7 +238,7 @@ class VIA_GoGo:
         else:
             X = X
     
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size= 0.25, random_state= 5)
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size= 0.25, random_state=5)
         
         clf.fit(X_train, y_train)
         
