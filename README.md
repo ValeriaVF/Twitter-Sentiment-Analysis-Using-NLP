@@ -6,7 +6,7 @@
 ###### Image by SurveySensum
 
 ## Overview
-Understanding brand and product reputation is difficult when only provided customer survey and review data. However, there is an abundance of social media responses to products and brands on various platforms. With these unofficial reviews and preferences towards products via tweets from Twitter, we can derive an overall sentiment towards your brand and products.
+Understanding brand and product reputation is difficult when only provided with customer surveys and review data. However, there is an abundance of social media responses to products and brands on various platforms. With these unofficial reviews and preferences towards products via tweets from Twitter, we can derive an overall sentiment towards your brand and products.
 
 Our comany, ViaGoGo, can provide you with a state-of-the-art machine learning model that rates the product and brand sentiment based on users who tweet about your brand. We can provide you with real-time graphs showing the trends of user sentiment towards your brand and products.
 
@@ -16,7 +16,7 @@ Companies have little insight into their overall brand reputation on social medi
 
 <img width="737" alt="word_cloud" src="https://user-images.githubusercontent.com/79488205/154748143-17743934-bc8a-40bc-8ec7-86d50fd60665.png">
 
-Our team of experts has built a Machine Learning model that uses Natural Language Processing to distinguish between positive and negative sentiment in Tweets. Using Google and Apple mentions on Twitter, we were able to classify sentiment to an 89% accuracy. 
+Our team of experts has built a Machine Learning model that uses Natural Language Processing to distinguish between positive and negative sentiment in Tweets. Using Google and Apple mentions on Twitter, we were able to classify sentiment to an 72% accuracy. 
 
 This model will be used as an analytics tool for companies to access their products' popularity on Twitter without having to access Twitter API. 
 
@@ -31,7 +31,7 @@ During our exploratory data analysis, we found that the data was not balanced, a
 #### Google & Apple sentiment ratio:
 <img width="411" alt="google_apple_sentiment_ratio" src="https://user-images.githubusercontent.com/79488205/154748394-608d0f0a-7ee0-465c-ab95-cbb2dccea9e3.png">
 
-In order to address this imbalance, we first used a binary classifier to predict if a tweet would have a negative or not negative response. We chose to use this binary classification because negative sentiment is much more insightful to a brand versus neutral or positive sentiment. An example of usage could be to monitor if the negative sentiment increases on a particular day, then we can use inferential analysis to find specific tweets that were affecting the rating.
+In order to address this imbalance, we first used a binary classifier to predict if a tweet would have a negative or not negative response, but due to the nature of our data we instead decided to go with a multiclass classifier to label our neutral tweets.
 
 ## Results & Evaluation
 
@@ -65,6 +65,7 @@ Another area ViaGoGo is actively working on is the creation of dashboards, which
 Finally, ViaGoGo is already in production of a web app that allows users to write a tweet and see its sentiment rating before publishing it. This will ensure that the author strikes the appropriate tone with their tweet and can prevent thoughtless or poorly constructed tweets from entering the public domain. This feature will be valued by social media managers sitewide.
 
 ---
+
 <h2><center>Brought to you by</h2></center>
 
 <p align="center">
@@ -76,7 +77,7 @@ Finally, ViaGoGo is already in production of a web app that allows users to writ
 
 #### For more information
 Please contact the contributors to this analysis: 
-[Eddie Prado]() |
+[Eddie Prado](https://www.linkedin.com/in/edel-prado-jr/) |
 [Sally Heinzel]() |
 [Valeria Viscarra Fossati](https://www.linkedin.com/in/valeria-vf/) |
 [Weston Shuken](https://www.linkedin.com/in/westonshuken/)
@@ -84,7 +85,6 @@ Please contact the contributors to this analysis:
 
 **Repository Structure:**
 ```
-├── data preprocessing                     <- Team Member's individual notebooks 
 ├── data                                   <- Both sourced externally and generated from code 
 ├── images                                 <- Both sourced externally and generated from code 
 ├── .gitignore                             <- gitignore      
