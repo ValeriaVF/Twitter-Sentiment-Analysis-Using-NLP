@@ -1,4 +1,3 @@
-from sklearn.metrics import plot_confusion_matrix
 import streamlit as st
 import pickle
 
