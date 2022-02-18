@@ -65,9 +65,12 @@ Another area ViaGoGo is actively working on is the creation of dashboards, which
 Finally, ViaGoGo is already in production of a web app that allows users to write a tweet and see its sentiment rating before publishing it. This will ensure that the author strikes the appropriate tone with their tweet and can prevent thoughtless or poorly constructed tweets from entering the public domain. This feature will be valued by social media managers sitewide.
 
 ---
-<h2><center>Brought to you by</center></h2>
+<h2><center>Brought to you by</h2></center>
 
-<img align="center" width="175"  src="images/ViaGoGo_logo.png">
+<p align="center">
+<img width="175"  src="images/ViaGoGo_logo.png">
+</p>
+
 
 ---
 
