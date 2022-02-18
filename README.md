@@ -43,7 +43,7 @@ We built multiclass models to predict whether tweets were positive, neutral and 
 
 We created an online application to demo the model's performance. The user can input a sample tweet and click the 'GoGo!' button, which will then return a sentiment score for the sample tweet of Positive, Negative, or Neutral.
 
-  [![name](https://github.com/ValeriaVF/Phase-4-Project/blob/main/images/cry_gogo.png)](https://www.canva.com/design/DAE4WW7ptzE/SWU2L4VoSazKOZod4JiJYA/edit)
+  [![name](https://github.com/ValeriaVF/Phase-4-Project/blob/main/images/ViaGoGo_logo.png)](https://www.canva.com/design/DAE4WW7ptzE/SWU2L4VoSazKOZod4JiJYA/edit)
 
 To demo the product, please click on our logo or visit this [link]().
 
