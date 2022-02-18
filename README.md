@@ -43,6 +43,12 @@ Once we had this baseline, we continued to tune the models until we reached an a
 
 ## Online Application
 
+We created an online application to demo the model's performance. The user can input a sample tweet and click the 'GoGo!' button, which will then return a sentiment score for the sample tweet of Positive, Negative, or Neutral.
+
+![Online_App](images/online_app.jpg)
+
+To demo the product, please visit this [link]().
+
 ## Business Proposal Summary
 Being competitive in the 21st century means utilizing 21st-century tools. ViaGogo’s Twitter Sentiment Analysis, built using natural language processing, offers Twitter an opportunity to give their brand users an advantage in the marketplace. This product enables businesses to capture public reactions about their company and products in a far more timely and authentic manner than focus groups or surveys. It collects and analyzes real-time reactions in order for businesses to make effective decisions.
 
