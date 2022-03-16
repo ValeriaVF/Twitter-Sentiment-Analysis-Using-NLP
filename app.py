@@ -4,7 +4,7 @@ import pickle
 
 st.title("Tweet Sentiment Analysis")
 
-load_clf = pickle.load(open('final_clf.pkl', 'rb'))
+load_clf = pickle.load(open('./model/final_clf.pkl', 'rb'))
 
 tweet_input = st.text_input('Write a Tweet')
 
