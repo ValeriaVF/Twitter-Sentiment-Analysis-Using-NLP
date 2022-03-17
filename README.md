@@ -39,11 +39,18 @@ We built multiclass models to predict whether tweets were positive, neutral and 
 
 <img width="405" alt="multiclass_models" src="https://user-images.githubusercontent.com/79488205/154748935-457f5a4e-bf1e-4199-9a80-f0d99913e04d.png">
 
+We also compared the accuracy score of our final model to the TextBlob and Afinn sentiment scoring. Our model performed the best on this dataset.
+
+ <img width="405" alt="comparisons" src="images/comparison.png">
+
+
 ## Online Application
 
 We created an online application to demo the model's performance. The user can input a sample tweet and click the 'GoGo!' button, which will then return a sentiment score for the sample tweet of Positive, Negative, or Neutral.
 
  <img width="800" alt="google_apple_sentiment_ratio" src="images/app_photo.png">
+ 
+[LINK TO APP](https://share.streamlit.io/westonshuken/twitter-sentiment-analysis/main/app.py)
 
 
 ## Business Proposal Summary
