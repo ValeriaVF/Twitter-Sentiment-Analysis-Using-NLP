@@ -1,3 +1,4 @@
+from ast import Index
 from unicodedata import name
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.metrics import accuracy_score, plot_confusion_matrix
@@ -5,6 +6,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 import re
+import pandas as pd
 
 class VIA_GoGo:
 
@@ -200,7 +202,7 @@ class VIA_GoGo:
         return df
 
 
-    def run_model(self, clf, table, X, y, type_='model', join_str=True, plot_models=False, pipeline=True):
+    def run_model(self, clf, table, X, y, type_='model', join_str=True, plot_models=False, pipeline=True, index=0):
         """
         Takes in a model, metric table, X, y, type of model and whether or not
         the X vairble needs to be joined or not.
@@ -258,8 +260,9 @@ class VIA_GoGo:
 
         
         
-        table = table.append({'Model': model_name + type_, 'CV Score': cv_score_mean, 'Test Accuracy': round(acc_score, 4), 'Type': type_}, ignore_index=True)
+        row = pd.DataFrame({'Model': model_name + type_, 'CV Score': cv_score_mean, 'Test Accuracy': round(acc_score, 4), 'Type': type_}, index=[index])
 
+        table = pd.concat([table, row], ignore_index=True)
 
         return table
 
