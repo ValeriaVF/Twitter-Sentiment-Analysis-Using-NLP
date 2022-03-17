@@ -93,10 +93,14 @@ Please contact the contributors to this analysis:
 ```
 ├── data                                   <- Both sourced externally and generated from code 
 ├── images                                 <- Both sourced externally and generated from code 
+├── model                                  <- Pickled model for the APP 
 ├── .gitignore                             <- gitignore      
 ├── README.md                              <- The top-level README for reviewers of this project
 ├── ViaGoGo_presentation.pdf               <- PDF version of project presentation
 ├── app.py                                 <- ViaGoGo streamlit application back-end
-└── index.ipynb                            <- Narrative documentation of analysis and modeling
+├── index.ipynb                            <- Narrative documentation of analysis and modeling
+├── app.py                                 <- ViaGoGo streamlit application back-end
+├── requirements.txt                       <- Dependencies for the streamlit application deployment
+└── viagogo.py                             <- Custom Python class for preprocessing and modeling
 
 ```
